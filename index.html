@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matcha Bliss</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#home">Matcha Bliss 🍵</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- BANNER -->
+<section id="home">
+    <div id="banner" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/images1.jpg" class="d-block w-100 banner-img" alt="Matcha drinks">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/image2.jpg" class="d-block w-100 banner-img" alt="Matcha drink">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/image3.jpg" class="d-block w-100 banner-img" alt="Matcha dessert">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="welcome text-center">
+        <h1>Welcome to Matcha Bliss!</h1>
+        <p>Enjoy delicious matcha drinks and sweet desserts.</p>
+        <a href="#products" class="btn btn-success">Shop Now</a>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="container my-5">
+    <h2 class="text-center mb-4">Our Featured Products</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images/top1.jpg" class="card-img-top" alt="Coconut Pistachio">
+                <div class="card-body">
+                    <h5>Coconut Pistachio</h5>
+                    <p>Creamy coconut with delicious matcha flavor.</p>
+                    <p class="price">₱149.00</p>
+                    <button class="btn btn-success add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images/top2.jpg" class="card-img-top" alt="Matcha Float">
+                <div class="card-body">
+                    <h5>Matcha Float</h5>
+                    <p>A refreshing matcha drink with a creamy topping.</p>
+                    <p class="price">₱139.00</p>
+                    <button class="btn btn-success add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images/top3.jpg" class="card-img-top" alt="Matcha Lover">
+                <div class="card-body">
+                    <h5>Matcha Lover</h5>
+                    <p>A classic drink for matcha lovers.</p>
+                    <p class="price">₱129.00</p>
+                    <button class="btn btn-success add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images/top4.jpg" class="card-img-top" alt="Coconut Matcha">
+                <div class="card-body">
+                    <h5>Coconut Matcha</h5>
+                    <p>A refreshing combination of coconut and matcha.</p>
+                    <p class="price">₱145.00</p>
+                    <button class="btn btn-success add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images/top5.jpg" class="card-img-top" alt="Matcha Tiramisu">
+                <div class="card-body">
+                    <h5>Matcha Tiramisu</h5>
+                    <p>A sweet and creamy matcha dessert.</p>
+                    <p class="price">₱159.00</p>
+                    <button class="btn btn-success add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images/top6.jpg" class="card-img-top" alt="Iced Matcha Latte">
+                <div class="card-body">
+                    <h5>Iced Matcha Latte</h5>
+                    <p>A smooth and refreshing iced matcha drink.</p>
+                    <p class="price">₱135.00</p>
+                    <button class="btn btn-success add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="text-center mt-4">
+        Items added to cart: <span id="cart-count">0</span>
+    </p>
+</section>
+
+<!-- ABOUT US -->
+<section id="about" class="about text-center py-5">
+    <div class="container">
+        <h2>About Matcha Bliss</h2>
+        <p>
+            Matcha Bliss is a matcha-inspired shop offering delicious drinks
+            and desserts. Our goal is to bring happiness to every matcha lover.
+        </p>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="container my-5" id="testimonials">
+    <h2 class="text-center mb-4">Customer Reviews</h2>
+
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="review">
+                <p>"I love matcha drinks!"</p>
+                <strong>- Sample Customer 1</strong>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review">
+                <p>"The desserts look delicious."</p>
+                <strong>- Sample Customer 2</strong>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review">
+                <p>"A perfect treat for matcha lovers."</p>
+                <strong>- Sample Customer 3</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="container my-5">
+    <h2 class="text-center mb-4">Our Gallery</h2>
+
+    <div class="row g-3">
+        <div class="col-6 col-md-4">
+            <img src="images/top1.jpg" class="gallery-img" alt="Matcha drink">
+        </div>
+        <div class="col-6 col-md-4">
+            <img src="images/top2.jpg" class="gallery-img" alt="Matcha float">
+        </div>
+        <div class="col-6 col-md-4">
+            <img src="images/top3.jpg" class="gallery-img" alt="Matcha lover">
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact text-center py-5">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: your-jolanhomerlangpawen@gmail.com</p>
+        <p>Location: Bontoc, Mt. Province, Philippines</p>
+        <a href="#home" class="btn btn-success">Back to Top</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+    <p>&copy; 2026 Matcha Bliss. All Rights Reserved.</p>
+</footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SIMPLE ADD TO CART -->
+<script>
+    let count = 0;
+
+    const buttons = document.querySelectorAll(".add-cart");
+
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            count++;
+            document.getElementById("cart-count").textContent = count;
+            alert("Product added to cart!");
+        });
+    });
+</script>
+
+</body>
+</html>

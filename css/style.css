@@ -1,0 +1,261 @@
+
+/* GENERAL STYLE */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: #354b2d;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #f1f5e9 !important;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #354b2d !important;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #333333 !important;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #6b8e4e !important;
+}
+
+/* BANNER */
+.banner-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.welcome {
+    background-color: #edf3e5;
+    padding: 35px 15px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn-success {
+    background-color: #536b3d;
+    border-color: #536b3d;
+    padding: 10px 20px;
+}
+
+.btn-success:hover {
+    background-color: #354b2d;
+    border-color: #354b2d;
+}
+
+/* PRODUCT SECTION */
+#products h2,
+#testimonials h2,
+#gallery h2 {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* PRODUCT CARDS */
+.product-card {
+    height: 100%;
+    border: 1px solid #dce5d5;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.product-card h5 {
+    color: #354b2d;
+    font-weight: bold;
+}
+
+.product-card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+.price {
+    color: #3f6b35 !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* CART COUNTER */
+#cart-count {
+    display: inline-block;
+    background-color: #536b3d;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 9px;
+    font-size: 14px;
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: #edf3e5;
+    padding: 50px 15px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 10px auto;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* CUSTOMER REVIEWS */
+.review {
+    background-color: #f5f7f1;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dce5d5;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.review:hover {
+    background-color: #edf3e5;
+    transform: translateY(-3px);
+}
+
+.review p {
+    font-style: italic;
+    color: #555555;
+}
+
+/* GALLERY */
+.gallery-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* CONTACT SECTION */
+.contact {
+    background-color: #edf3e5;
+    padding: 50px 15px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #354b2d;
+    color: white;
+    padding: 20px 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .banner-img {
+        height: 300px;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+
+    .gallery-img {
+        height: 180px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-img {
+        height: 220px;
+    }
+
+    .welcome {
+        padding: 25px 15px;
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    .welcome p {
+        font-size: 15px;
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+
+    .gallery-img {
+        height: 150px;
+    }
+}
